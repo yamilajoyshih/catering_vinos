@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* BRANDING  */
+.header{
+    position: relative;
+    padding: 20px;
+
+}
+
+.byline {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #7b7b7b;
+    text-align: center;
+}
+
+.branding {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* CAROUSEL */
+.wine-info {
+    margin-left: 70px;
+}
+.wine-info h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.wine-info p {
+    margin-top: 10px;
+    margin-right: 100px;
+    color: #7b7b7b;
+    font-size: 1rem;
+}
+.wine-image img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+.wine-details {
+    display: flex;
+    margin-top: 20px;
+    gap:30px;
+}
+.wine-details div {
+    margin-right: 30px;
+}
+.wine-details div p {
+    margin: 0;
+}
+
+.ancla-tienda{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ancla-tienda:hover, .btonTasting:hover, .botonLearn:hover {
+    color: goldenrod;
+    text-decoration: underline;
+    background-color: transparent; 
+}
+
+.botonLearn:hover{
+    border: 2px solid black; 
+
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.slides{
+    margin: 50px;
+}
+
+.botonLearn{
+    border: 2px solid black; 
+    background-color: transparent; 
+    color: black; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.tastingnote {
+    font-family: 'Playfair Display', serif;
+    border-radius: 20px; /* Esquinas redondeadas */
+    border: 1px solid #ddd; /* Borde suave, como el de una hoja de papel */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: e8dcbf; /* Fondo blanco semi-transparente */
+    padding: 20px; /* Espaciado interno */
+  }

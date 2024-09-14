@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./bootstrap.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto</title>
+</head>
+<body class="bg-warning bg-opacity-10">
+<!-- BARRA -->
+    <header class="header">
+        <div class="container d-flex flex-column align-items-center">
+            <nav class="navbar navbar-light bg-transparent text-start">
+                <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagenes/logo1.jpeg" alt="" width="150" height="150">
+                </a>
+                </div>
+            </nav>
+            <h1 class="fs-4 fst-italic branding  text-start">Let's enjoy the wine</h1>
+            <p class="byline">by Joy Shih</p>
+        </div>
+    </header>
+    <!-- <header class="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <nav class="navbar navbar-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagenes/logo1.jpeg" alt="" width="150" height="150">
+                </a>
+            </nav>
+            <div class="flex-grow-1 text-center titulo">
+                <h1 class="fs-4 fst-italic branding mb-0">Let's enjoy the wine</h1>
+                <p class="byline mb-0">by Joy Shih</p>
+            </div>
+        </div>
+    </header> -->
+    
+<!--MENU-->
+    <div class="container mt-3">
+        <div class="d-flex justify-content-end">
+            <div class="dropdown me-3">
+                <button class="btn dropdown-toggle" type="button" id="wineDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; color: inherit;">
+                    Our Favorite of The Season
+                    <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="wineDropdown">
+                    <li><a class="dropdown-item" href="#luigi-bosca">Luigi Bosca Chardonnay 2022</a></li>
+                    <li><a class="dropdown-item" href="#luca">Luca Chardonnay 2017</a></li>
+                    <li><a class="dropdown-item" href="#meg">Escorihuela Meg Chardonnay 2017</a></li>
+                    <li><a class="dropdown-item" href="#alisa-malbec">Alisa Malbec de Noemia 2022</a></li>
+                    <li><a class="dropdown-item" href="#ElEnemigo">El enemigo Chardonnay 2021</a></li>
+
+                </ul>
+            </div>
+            <a href="#tastingNotes" class="btn ms-5 btonTasting">Go to Tasting Notes</a>
+        </div>
+    </div>
+<!-- CARUSEL -->
+    <div id="wineCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner bg-secondary bg-opacity-10">
+            <!-- Slide 1 -->
+            <div id="luigi-bosca" class="carousel-item active">
+                <section class="wine-section d-flex align-items-center justify-content-center">
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <div class="wine-image me-5">
+                            <img src="./imagenes/vino_Luigi.png" alt="vino_Luigi" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div class="wine-info">
+                            <p><strong>Enjoy wine</strong></p>
+                            <h2>Luigi Bosca Chardonnay</h2>
+                            <a class="ancla-tienda" href="https://tienda.luigibosca.com/exclusivos-tienda-online?utm_source=google&utm_medium=cpc&utm_campaign=search_brand&utm_content=brand_terms_2&gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBou_LjSgxIV3_AmefCOE_jf2U5a-T-CjHs9eOWQ9GleMeqohfxUHlk4aAikKEALw_wcB">Learn More</a>
+                            <div class="wine-details mt-3">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <p><strong>pH</strong></p>
+                                        <p>3.20</p>
+                                    </div>
+                                    <div class="me-3">
+                                        <p><strong>Total Acid</strong></p>
+                                        <p>5,95 g/l</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Alcohol</strong></p>
+                                        <p>13,70%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4 me-3">Luigi Bosca Chardonnay es un blanco de color amarillo brillante. Sus aromas remiten a frutas blancas levemente tropicales, en armonía con notas cítricas y florales. Su entrada en boca es redonda y compacta, de paladar definido, buen volumen y carácter frutal maduro. Su acidez equilibrada le aporta una agradable vivacidad. Final expresivo y amplio, con un dejo floral muy elegante y una larga persistencia.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+     <!-- Slide 2 -->
+    <div id="luca" class="carousel-item">
+        <section class="wine-section d-flex align-items-center">
+            <div class="container d-flex align-items-center m-10">
+                <div class="wine-image">
+                    <img src="./imagenes/vino_luca.png" alt="vino luca">
+                </div>
+                <div class="wine-info">
+                    <p><strong>Enjoy wine</strong></p>
+                    <h2>Luca Chardonnay</h2>
+                    <a class="ancla-tienda" href="https://www.frappe.com.ar/chardonnay/2106-luca-chardonnay-750-ml.html">Learn More</a>
+                    <div class="wine-details">
+                        <div>
+                            <p><strong>pH</strong></p>
+                            <p>3.55</p>
+                        </div>
+                        <div>
+                            <p><strong>Total Acid</strong></p>
+                            <p>5,5 g/l</p>
+                        </div>
+                        <div>
+                            <p><strong>Alcohol</strong></p>
+                            <p>13.7%</p>
+                        </div>
+                    </div>
+                    <p class="mt-4"> Cautivante color pálido, con sugestivos aromas a crema de limón y especias para hornear, como nuez moscada, anís y clavo de olor. En boca, se reproduce la paleta aromática de este vino con dejos de durazno blanco, pera horneada, y un persistente sabor mineral, que crea un vino parte Nuevo y parte Viejo Mundo.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Slide 3 -->
+    <div id="meg" class="carousel-item">
+        <section class="wine-section d-flex align-items-center">
+            <div class="container d-flex align-items-center m-10">
+                <div class="wine-image">
+                    <img src="./imagenes/vino_meg.png" alt="vino_meg">
+                </div>
+                <div class="wine-info">
+                    <p><strong>Enjoy wine</strong></p>
+                    <h2>MEG Escorihuela Gascón Chardonnay</h2>
+                    <a class="ancla-tienda" href="https://www.lardevinos.com.ar/productos/meg-chardonnay-escorihuela-gascon/#:~:text=Es%20un%20vino%20varietal%20con,ascenso%20que%20coronan%20la%20copa.">Learn More</a>
+                    <div class="wine-details">
+                        <div>
+                            <p><strong>pH</strong></p>
+                            <p>3.45</p>
+                        </div>
+                        <div>
+                            <p><strong>Total Acid</strong></p>
+                            <p>5,5 g/l</p>
+                        </div>
+                        <div>
+                            <p><strong>Alcohol</strong></p>
+                            <p>13.6%</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">Aromáticamente expresivo y fresco con aromas frutales como lima, durazno blanco y dejos de cerezas. El método champenoise suma tonos de frutos secos, levadura, pan tostados y brioche. Tiene un paladar seco y cremoso,Ataque refrescante de buen caudal frutal y complejidad.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- slide 4 -->
+    <div id="alisa-malbec" class="carousel-item">
+        <section class="wine-section d-flex align-items-center">
+            <div class="container d-flex align-items-center m-10">
+                <div class="wine-image">
+                    <img src="./imagenes/a-lisa-malbec3.png" alt="vino luca">
+                </div>
+                <div class="wine-info">
+                    <p><strong>Enjoy wine</strong></p>
+                    <h2>Alisa Malbec</h2>
+                    <a class="ancla-tienda" href="https://www.espaciovino.com.ar/vinos-ficha/A-Lisa-Malbec">Learn More</a>
+                    <div class="wine-details">
+                        <div>
+                            <p><strong>pH</strong></p>
+                            <p>3.70</p>
+                        </div>
+                        <div>
+                            <p><strong>Total Acid</strong></p>
+                            <p>5,10 g/l</p>
+                        </div>
+                        <div>
+                            <p><strong>Alcohol</strong></p>
+                            <p>14%</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">Viña Alicia Malbec es un vino de color violáceo, alcohólico, susceptible de envejecer muy bien. Tiene un dejo dulzón y especiado. Con el tiempo ofrece mayor complejidad y profundidad de aromas. Tiene una combinación de fruta fresca, dulzura y sutileza, y hasta algo de piedra y minerales.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- seccion 5 -->
+    <div id="ElEnemigo" class="carousel-item">
+        <section class="wine-section d-flex align-items-center">
+            <div class="container d-flex align-items-center m-10">
+                <div class="wine-image">
+                    <img src="./imagenes/Elenemigo.png" alt="vino luca">
+                </div>
+                <div class="wine-info">
+                    <p><strong>Enjoy wine</strong></p>
+                    <h2>El enemigo Chardonnay</h2>
+                    <a class="ancla-tienda" href="https://www.spectrumwine.com/retail/winedetail.aspx?id=327021&gad_source=1&gclid=CjwKCAjwuMC2BhA7EiwAmJKRrBCrZSQ9e-bJCp1d7kj-iZvLfCiMo7JOsM1mglrKk4bImpwKu9lytRoCDkoQAvD_BwE">Learn More</a>
+                    <div class="wine-details">
+                        <div>
+                            <p><strong>pH</strong></p>
+                            <p>3.70</p>
+                        </div>
+                        <div>
+                            <p><strong>Total Acid</strong></p>
+                            <p>5,10 g/l</p>
+                        </div>
+                        <div>
+                            <p><strong>Alcohol</strong></p>
+                            <p>12,8%</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">
+                        El Enemigo Chardonnay es elaborado y fermentado en barricas de segundo y tercer uso. Trabajo sobre borras para otorgar cremosidad. Es un vino fresco, con aporte del calcáreo y la tiza del suelo de Gualtallary, el resultado es un Chardonnay chispeante, aromático y notablemente aterciopelado en boca.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+        <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#wineCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#wineCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+<!-- SEGUNDA SECCION -->
+<div class="container mt-5">
+    <div class="row">
+      <!-- Columna izquierda con el texto -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center">¡Únete a Nuestra Experiencia Exclusiva de Catering de Vinos!</h2>
+        <p class="text-center mt-3">Te invitamos a una experiencia única donde podrás descubrir y degustar una selección exclusiva de vinos de los mejores viñedos. En este evento, tendrás la oportunidad de conocer diferentes tipos de vinos, desde tintos robustos hasta blancos frescos y espumantes exquisitos.</p>
+  
+        <p class="text-center mt-3">No solo aprenderás sobre los orígenes y características de cada vino, sino que también compartirás esta experiencia con otras personas apasionadas por el vino, creando nuevas conexiones mientras exploras los sabores y aromas que cada copa tiene para ofrecer.</p>
+  
+        <p class="text-center mt-3">Prueba la variedad, amplía tus conocimientos sobre enología, y disfruta de una velada especial diseñada para los verdaderos amantes del buen vino. ¡No te pierdas la oportunidad de deleitarte con los mejores vinos y vivir una noche inolvidable!</p>
+  
+        <!-- Botón que abre el modal -->
+        <button type="button" class="btn btn-primary mt-3 botonLearn" data-bs-toggle="modal" data-bs-target="#emailModal">
+          INSCRIBITE!
+        </button>
+      </div>
+  
+      <!-- Columna derecha con las imágenes -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <!-- Imagen arriba -->
+        <img src="./imagenes/secci2.jpg" alt="Imagen del vino" class="img-fluid w-75 mb-3"> <!-- Imagen superior más pequeña -->
+  
+        <!-- Dos imágenes abajo en fila -->
+        <div class="d-flex">
+          <img src="./imagenes/se2.jpg" alt="Imagen 1" class="img-fluid w-50 mx-2" style="height: 150px;"> <!-- Imagen 1 -->
+          <img src="./imagenes/secc2.jpg" alt="Imagen 2" class="img-fluid w-50 mx-2" style="height: 150px;"> <!-- Imagen 2 -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal con el formulario para dejar el email -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emailModalLabel">Deja tu correo electrónico</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Deja tu mail así te mandamos toda la informacion!</p>
+            <form>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="tuemail@ejemplo.com" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  
+
+<!-- TERCERA SECCION -->
+<div id="tastingNotes" class="container mt-5 bg-secondary bg-opacity-10 p-4 rounded">
+    <div class="row">
+      <!-- Columna del texto -->
+      <div class="col-md-8 mb-3 mb-md-0">
+        <div class="p-3 rounded tastingnote">
+          <h2 class="text-center mb-4 ">Tasting Notes</h2>
+          <p>
+            <span class="d-block text-center fw-bold fst-italic h5">Preparación</span>
+            <strong>Ambiente:</strong> Elija un lugar tranquilo y bien iluminado. Evite olores fuertes.<br>
+            <strong>Vasos:</strong> Use copas de cristal transparente.<br>
+            <strong>Temperatura:</strong> Frío para blancos (8-12°C) y temperatura ambiente para tintos (16-18°C).
+          </p>
+  
+          <p>
+            <span class="d-block text-center fw-bold fst-italic h5">Observación</span>
+            <strong>Color y claridad:</strong> Incline la copa sobre un fondo blanco. El vino debe ser brillante y limpio.
+          </p>
+  
+          <p>
+            <span class="d-block text-center fw-bold fst-italic h5">Olfato</span>
+            <strong>Primer aroma:</strong> Huela sin agitar la copa para captar los aromas más volátiles.<br>
+            <strong>Aromas secundarios:</strong> Gire la copa suavemente y vuelva a oler para identificar notas más complejas.
+          </p>
+  
+          <p>
+            <span class="d-block text-center fw-bold fst-italic h5">Gusto</span>
+            <strong>Primer sorbo:</strong> Tome un pequeño sorbo y evalúe su acidez, cuerpo, dulzor y taninos.<br>
+            <strong>Final:</strong> Note la duración de los sabores tras tragar el vino.
+          </p>
+  
+          <p>
+            <span class="d-block text-center fw-bold fst-italic h5">Recomendaciones</span>
+            <strong>Maridaje:</strong> Blancos con pescados y mariscos, tintos con carnes rojas.<br>
+            <strong>Almacenamiento:</strong> Conserve el vino en un lugar fresco y oscuro, con las botellas en posición horizontal.<br>
+            <strong>Disfrute:</strong> Probar un vino es una experiencia personal; disfrútela y compártala.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Columna de la imagen -->
+      <div class="col-md-4">
+        <img src="./imagenes/op1.jpeg" class="img-fluid rounded h-100" style="object-fit: cover;" alt="Image description">
+      </div>
+    </div>
+  </div>
+  
+<!-- PIE PAGINA -->
+    <footer class="bg-secondary bg-opacity-10 py-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <p class="mb-0 fw-bold fst-italic ">Let's enjoy the wine</p>
+            </div>
+            <!-- Enlaces -->
+            <div>
+                <a href="https://www.instagram.com/lacamaradejoy/" class="me-3 text-decoration-none text-dark">instagram</a>
+                <a href="#" class="me-3 text-decoration-none text-dark">Wine Club</a>
+                <a href="#" class="text-decoration-none text-dark">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
